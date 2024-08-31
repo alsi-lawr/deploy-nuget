@@ -1,5 +1,5 @@
 name: 'Deploy to NuGet'
-description: 'Reusable action to build and deploy a .NET project to NuGet the @v tag of the action is the dotnet sdk version.'
+description: 'Reusable action to build and deploy a .NET project to NuGet.'
 author: 'ALSI'
 
 inputs:
