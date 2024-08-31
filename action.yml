@@ -1,6 +1,6 @@
 name: 'Deploy to NuGet'
-
 description: 'Reusable action to build and deploy a .NET project to NuGet the @v tag of the action is the dotnet sdk version.'
+author: 'ALSI'
 
 inputs:
   deploy-nuget-project:
@@ -42,3 +42,6 @@ runs:
         mcr.microsoft.com/dotnet/sdk:${{ inputs.dotnet-version }} \
         bash -c "./src/deploy.sh ${{ inputs.deploy-nuget-project }} ${{ inputs.version }} ${{ inputs.build-only }}"
 
+branding:
+  icon: 'package'
+  color: 'blue'
