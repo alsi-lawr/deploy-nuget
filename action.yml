@@ -1,0 +1,43 @@
+name: 'Deploy to NuGet'
+
+description: 'Reusable action to build and deploy a .NET project to NuGet the @v tag of the action is the dotnet sdk version.'
+
+inputs:
+  deploy-nuget-project:
+    description: 'The path to the .NET project to deploy'
+    required: true
+  version:
+    description: 'The version to assign to the NuGet package'
+    required: true
+  nuget-api-key:
+    description: 'Your NuGet API key'
+    required: true
+    secret: true
+  dotnet-version:
+    description: 'The .NET SDK version to use'
+    default: '8.0'
+    options:
+      - '8.0'
+      - '7.0'
+      - '6.0'
+  build-only:
+    description: 'Only build the project, do not deploy'
+    default: false
+    options:
+      - true
+      - false
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Deploy to NuGet in Docker
+      run: |
+        docker run --rm \
+          -v ${{ github.workspace }}:/workspace \
+          -e NUGET_API_KEY=${{ inputs.nuget-api-key }} \
+          -e GITHUB_REF_NAME=${{ github.ref_name }} \
+          -e GITHUB_SHA=${{ github.sha }} \
+          -w /workspace \
+        mcr.microsoft.com/dotnet/sdk:${{ inputs.dotnet-version }} \
+        bash -c "./src/deploy.sh ${{ inputs.deploy-nuget-project }} ${{ inputs.version }} ${{ inputs.build-only }}"
+
