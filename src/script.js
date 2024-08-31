@@ -1,8 +1,6 @@
+const script = `
 #!/bin/bash
 
-PROJECT_PATH=$1
-PACKAGE_VERSION=$2
-BUILD_ONLY=$3
 echo "Deploying package in $PROJECT_PATH with version $PACKAGE_VERSION"
 echo "Dotnet version used: "
 dotnet --version
@@ -31,4 +29,6 @@ fi
 dotnet nuget push "$PROJECT_PATH/bin/Release/*.nupkg"\
     --source https://api.nuget.org/v3/index.json\
     --api-key $NUGET_API_KEY
+`;
 
+module.exports = script;

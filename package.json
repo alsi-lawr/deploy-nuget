@@ -1,0 +1,23 @@
+{
+  "name": "deploy-nuget",
+  "version": "1.0.0",
+  "description": "This reusable action builds a .NET project and deploys the resulting package to NuGet. It supports configuration for custom project paths and versioning, and securely handles the NuGet API key as a secret.",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/exec": "^1.1.1"
+  }
+}
