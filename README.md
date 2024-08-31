@@ -12,6 +12,7 @@ Simply use this action in your workflow by specifying the project file path, ver
 - `version`: **Required**. The version to assign to the NuGet package. Typically, this is dynamically generated from tags or other versioning strategies.
 - `nuget-api-key`: **Required**. The NuGet API key used to push the package to NuGet.org. This should be stored securely as a GitHub Secret.
 - `dotnet-version`: **Optional**. The .NET SDK version to use. Defaults to `8.0`.
+- `build-only`: **Optional**. If `true`, only build the project, do not deploy. Defaults to `false`.
 
 ### Example
 
@@ -51,4 +52,3 @@ jobs:
 ## Contributing
 
 Contributions are welcome! Please refer to the [contributing guidelines](./docs/CONTRIBUTING.md) for more information.
-
