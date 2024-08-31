@@ -2,13 +2,17 @@
 
 This reusable action builds a .NET project and deploys the resulting package to NuGet. It supports configuration for custom project paths and versioning, and securely handles the NuGet API key as a secret.
 
+![Test Workflow](https://github.com/alsi-lawr/deploy-nuget/actions/workflows/test-action.yml/badge.svg)
+![GitHub release)](https://img.shields.io/github/v/release/alsi-lawr/deploy-nuget)
+![Licence](https://img.shields.io/github/license/alsi-lawr/deploy-nuget)
+
 ## Usage
 
 Simply use this action in your workflow by specifying the project file path, version, and your NuGet API key.
 
 ### Inputs
 
-- `deploy-nuget-project`: **Required**. The path to the `.csproj` file of the .NET project that you want to build and deploy.
+- `project`: **Required**. The path to the project directory of the .NET project that you want to build and deploy.
 - `version`: **Required**. The version to assign to the NuGet package. Typically, this is dynamically generated from tags or other versioning strategies.
 - `nuget-api-key`: **Required**. The NuGet API key used to push the package to NuGet.org. This should be stored securely as a GitHub Secret.
 - `dotnet-version`: **Optional**. The .NET SDK version to use. Defaults to `8.0`.
@@ -34,7 +38,7 @@ jobs:
       - name: Deploy to NuGet
         uses: alsi-lawr/deploy-nuget@v1
         with:
-          deploy-nuget-project: 'src/MyProject'  # Specify the correct path to your project file directory
+          project: 'src/MyProject'  # Specify the correct path to your project file directory
           version: 1.0.${{ github.run_number }}  # Example using the run number
           nuget-api-key: ${{ secrets.NUGET_API_KEY }}  # NuGet API key stored as a secret
           dotnet-version: '8.0'
