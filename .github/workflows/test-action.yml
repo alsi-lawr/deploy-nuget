@@ -19,6 +19,6 @@ jobs:
           deploy-nuget-project: 'test'
           version: '1.0.0' 
           nuget-api-key: 'GARBAGE' 
-          image-version: '8.0'
+          dotnet-version: '8.0'
           build-only: true
 
