@@ -16,7 +16,7 @@ jobs:
       - name: Deploy to NuGet
         uses: ./
         with:
-          deploy-nuget-project: 'test'
+          project: 'test'
           version: '1.0.0' 
           nuget-api-key: 'GARBAGE' 
           dotnet-version: '8.0'
