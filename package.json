@@ -1,6 +1,6 @@
 {
   "name": "deploy-nuget",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "This reusable action builds a .NET project and deploys the resulting package to NuGet. It supports configuration for custom project paths and versioning, and securely handles the NuGet API key as a secret.",
   "main": "src/index.js",
   "directories": {
