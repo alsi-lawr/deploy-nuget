@@ -1,10 +1,17 @@
-# Deploy to NuGet
+<div align="center">
+
+<img src="assets/deploy-nuget.svg" width="128" height="128" alt="deploy-nuget logo">
+
+# deploy-nuget
+
+**Build and publish .NET packages through one reusable action.**
+
+[![Action tests](https://github.com/alsi-lawr/deploy-nuget/actions/workflows/test-action.yml/badge.svg?branch=master)](https://github.com/alsi-lawr/deploy-nuget/actions/workflows/test-action.yml)
+[![Release](https://img.shields.io/github/v/release/alsi-lawr/deploy-nuget?display_name=tag&sort=semver)](https://github.com/alsi-lawr/deploy-nuget/releases/latest)
+
+</div>
 
 This reusable action builds a .NET project and deploys the resulting package to NuGet. It supports configuration for custom project paths and versioning, and securely handles the NuGet API key as a secret.
-
-![Test Workflow](https://github.com/alsi-lawr/deploy-nuget/actions/workflows/test-action.yml/badge.svg)
-![GitHub release)](https://img.shields.io/github/v/release/alsi-lawr/deploy-nuget)
-![Licence](https://img.shields.io/github/license/alsi-lawr/deploy-nuget)
 
 ## Usage
 

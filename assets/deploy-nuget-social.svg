@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">deploy-nuget</title>
+  <desc id="description">The deploy-nuget package mark and wordmark on a dark social card.</desc>
+  <defs>
+    <clipPath id="card-clip">
+      <rect x="10" y="10" width="1260" height="620" rx="56"/>
+    </clipPath>
+  </defs>
+  <rect x="10" y="10" width="1260" height="620" rx="56" fill="#101827" fill-opacity="0.97" stroke="#7c3aed" stroke-width="4" stroke-opacity="0.7"/>
+  <g clip-path="url(#card-clip)">
+    <circle cx="1160" cy="90" r="220" fill="#7c3aed" opacity="0.055"/>
+    <circle cx="1110" cy="585" r="285" fill="#7c3aed" opacity="0.035"/>
+  </g>
+  <path d="M480 408H1136" stroke="#7c3aed" stroke-width="4" opacity="0.65"/>
+  <g transform="translate(96 160) scale(1.25) translate(-0 -0)" aria-hidden="true">
+<defs>
+    <linearGradient id="deploy" x1="48" y1="43" x2="213" y2="216" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="220" height="220" rx="48" fill="#101827"/>
+  <path d="M52 94l76-42 76 42-76 43-76-43Z" fill="#263552" stroke="url(#deploy)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M52 94v78l76 42 76-42V94M128 137v77" fill="none" stroke="#7dd3fc" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 52v85" fill="none" stroke="#c4b5fd" stroke-width="8"/>
+  <path d="M128 40v-20M111 37l17-17 17 17" fill="none" stroke="#f5f3ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="57" r="7" fill="#7c3aed"/>
+  <circle cx="188" cy="57" r="7" fill="#38bdf8"/>
+  </g>
+  <text x="480" y="325" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="94" font-weight="750" letter-spacing="-4">
+    <tspan>deploy-</tspan><tspan fill="#7dd3fc">nuget</tspan>
+  </text>
+  <text x="484" y="379" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="19" font-weight="650" letter-spacing="2.2">
+    REUSABLE NUGET PACKAGING AND PUBLISHING
+  </text>
+</svg>

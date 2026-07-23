@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title description">
+  <title id="title">deploy-nuget</title>
+  <desc id="description">A package rising along a reliable publishing path.</desc>
+  <defs>
+    <linearGradient id="deploy" x1="48" y1="43" x2="213" y2="216" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="18" width="220" height="220" rx="48" fill="#101827"/>
+  <path d="M52 94l76-42 76 42-76 43-76-43Z" fill="#263552" stroke="url(#deploy)" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M52 94v78l76 42 76-42V94M128 137v77" fill="none" stroke="#7dd3fc" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 52v85" fill="none" stroke="#c4b5fd" stroke-width="8"/>
+  <path d="M128 40v-20M111 37l17-17 17 17" fill="none" stroke="#f5f3ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="57" r="7" fill="#7c3aed"/>
+  <circle cx="188" cy="57" r="7" fill="#38bdf8"/>
+</svg>
